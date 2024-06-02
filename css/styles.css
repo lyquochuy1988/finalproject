@@ -1,0 +1,298 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* layout systems, flex and flexbox, grid */
+:root {
+  min-height: 100vh;
+  background-image: url(../images/seattle-skyline.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* Header styles */
+header {
+  background: rgb(19, 17, 17);
+  display: flex;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1.5em;
+  color: #d9961a;
+  max-width: fit-content;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  background: rgb(19, 17, 17);
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+#logo-container #logo {
+  height: 5em;
+  justify-content: flex-start;
+}
+
+#menu-bar > ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5em;
+  margin-right: 15px;
+}
+
+#menu-bar > ul > li {
+  list-style: none;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+#menu-bar > ul > li > a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  font-style: oblique;
+  padding: 0 15px;
+}
+
+#menu-bar > ul > li > a.active {
+  background-color: cornflowerblue;
+  color: rgb(209, 207, 53);
+  font-weight: bolder;
+  padding: 15px;
+}
+
+#menu-bar > ul > li > a:hover {
+  background-color: rgb(177, 133, 133);
+  color: rgb(168, 214, 59);
+  padding: 15px;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 940px;
+  margin: 160px auto;
+  overflow: hidden;
+}
+
+main {
+  /* width: 580px; */
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 580px;
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+/* Projects class Styles */
+.row {
+  /* background-color: aliceblue; */
+  overflow: hidden;
+  clear: both;
+  display: flex;
+  justify-content: stretch;
+  flex-grow: 1;
+  /* width: 33.33%; */
+
+}
+
+.third {
+  width: 31.91%;
+  background: #fff;
+  /* margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px; */
+  padding: 16px;
+  margin-left: 20px;
+}
+
+.third:first-child {
+  margin-left: 0;
+}
+
+.quarter {
+  width: 23.40%;
+  background: #fff;
+  /* margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px; */
+  padding: 14px;
+  margin-left: 10px;
+}
+
+.quarter:first-child {
+  margin-left: 0;
+}
+
+aside {
+  width: 340px;
+  height: fit-content;
+  background: #d9961a;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+/* Footer styles */
+footer {
+  background: #333;
+  color: #fff;
+  height: 50px;
+  line-height: 40px;
+  clear: both;
+  font-size: 0.75em;
+  width: 100%;
+  margin-top: auto;
+  font-style: italic;
+  font-size: 0.85em;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: left;
+  margin-left: 25px;
+}
+
+footer li {
+  margin-top: 5px;
+  margin-right: 100px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer img {
+  margin-top: 5px;
+}
+
+img {
+  max-width: 100%;
+  display: flex;
+}
+
+/* Topography */
+h1,
+h2,
+h3 {
+  font-family: Arial, sans-serif, Georgia, "Times New Roman", Times, serif;
+  line-height: 1.2em;
+  text-align: center;
+  margin: 10px auto;
+}
+
+p {
+  font-family: Arial, sans-serif, Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5em;
+}
+
+.projects h2 {
+  font-family: Arial, sans-serif, Georgia, "Times New Roman", Times, serif;
+  color: #ffffa9;
+}
+
+#wrapper h2 {
+  margin-bottom: 30px;
+}
+
+#wrapper h2.title {
+  font-family: Arial, sans-serif, Georgia, "Times New Roman", Times, serif;
+  color: #ffffa9;
+}
+
+.about {
+  background: #fff;
+  padding: 20px;
+}
+
+.about h3 {
+  margin-bottom: 30px;
+}
+
+
+/* Contact Form  */
+form {
+  width: 400px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px
+      rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 1px solid rgb(68, 66, 66);
+  padding: 10px;
+  margin: 0;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="radio"] {
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
